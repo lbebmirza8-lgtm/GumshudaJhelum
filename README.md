@@ -1,6 +1,25 @@
 # Gumshuda Jhelum — Lost Jhelum
 
-A static, single-page heritage site documenting seven places in Jhelum district. No build step, no framework, no backend — just `index.html`, `style.css`, `script.js`.
+**Live at:** https://lbebmirza8-lgtm.github.io/GumshudaJhelum/
+
+An interactive heritage web application exploring seven historic landmarks across Jhelum district, Pakistan:
+
+- **Hydaspes** — Site of Alexander the Great's famous battle against King Porus (326 BC)
+- **Tilla Jogian** — Ancient hilltop monastic sanctuary of ascetic yogis
+- **Nandana Fort** — Historic fort where polymath Al-Biruni calculated the Earth's circumference
+- **Rohtas Fort** — Massive 16th-century garrison fort and UNESCO World Heritage Site
+- **Khewra Salt Mines** — World-famous historic salt mines
+- **Victoria Bridge** — Iconic 19th-century colonial railway bridge
+- **Mangla Dam** — Modern reservoir landmark that submerged ancient river settlements
+
+### Why It Exists
+Most people, including local residents, have never heard the full story behind these places despite walking past or living near them every day. *Gumshuda Jhelum* exists to bring this history to life, making it accessible, engaging, and memorable rather than letting it fade from public memory.
+
+### Interactive Features
+- **Now vs. Historical Era Sliders:** Visual comparison sliders matching present-day site views with past eras.
+- **Heritage Passport:** Interactive quizzes for each location that seal progress into a collectible passport.
+- **Global Significance, Local Silence:** Highlights explaining why each landmark matters far beyond Jhelum.
+- **The Chronicler:** An embedded offline, rule-based chatbot that answers common questions about each site.
 
 ## Run it locally
 Just open `index.html` in a browser — or in Cursor, right-click it and "Open with Live Server" if you have that extension, or run:

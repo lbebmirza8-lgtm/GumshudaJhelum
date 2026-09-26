@@ -19,19 +19,13 @@ To swap or add a photo:
    ```
 3. Refresh the page.
 
-## Deploy to Vercel
-No config needed — it's already a static site.
-
-**Option A — via GitHub (recommended):**
-1. Push this folder to a new GitHub repo
-2. Go to vercel.com → "Add New Project" → import that repo
-3. Leave all settings as default (no build command, no output directory needed for plain static)
-4. Deploy — you get a live `.vercel.app` URL instantly, and it auto-redeploys every time you push
-
-**Option B — instant, no GitHub:**
-1. Install the Vercel CLI: `npm i -g vercel`
-2. From inside this folder, run: `vercel`
-3. Follow the prompts (first deploy asks a few setup questions — accept the defaults)
-4. You get a live URL in your terminal within seconds
-
-Either way, the link stays live indefinitely (not just a week) unless you delete the project.
+## Deploy (GitHub Pages)
+This repo is already deployed via GitHub Pages.
+- Live at: https://lbebmirza8-lgtm.github.io/GumshudaJhelum/
+- To update the live site: make your changes locally, then:
+  git add .
+  git commit -m "describe the change"
+  git push
+  GitHub Pages redeploys automatically within a minute or two of every push.
+- If Pages ever needs to be reconfigured: repo Settings → Pages → Source:
+  "Deploy from a branch" → Branch: main, folder: / (root).

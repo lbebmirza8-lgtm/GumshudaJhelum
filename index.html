@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gumshuda Jhelum — Lost Jhelum</title>
+<meta name="description" content="An interactive heritage map of Jhelum's forgotten sites — Hydaspes, Tilla Jogian, Nandana Fort, Rohtas Fort, Khewra, Victoria Bridge, and Mangla Dam.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9C%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Site header">
+  <div class="site-nav-inner">
+    <p class="site-nav-title">Gumshuda Jhelum <span class="site-nav-subtitle">— Lost Jhelum</span></p>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="hero-river" viewBox="0 0 780 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,140 C150,110 250,170 400,130 C550,90 650,150 780,120 L780,200 L0,200 Z" fill="var(--river)" opacity="0.18"/>
+    <path d="M0,160 C180,130 300,180 460,150 C600,124 680,170 780,150 L780,200 L0,200 Z" fill="var(--river)" opacity="0.3"/>
+  </svg>
+  <div class="wrap">
+    <p class="kicker">JHELUM DISTRICT · A FIELD JOURNAL, RECOVERED</p>
+    <h1 class="title">You've walked past<br>2,300 years and<br>never noticed.</h1>
+    <p class="lede">Seven places across Jhelum district — a battlefield, a hilltop observatory, three forts, a mine, a bridge, and a dam that reshaped a nation's diaspora. <strong>Most people from Jhelum have never heard the full story of any of them.</strong> This is an attempt to hand it back.</p>
+    <div class="passport">
+      <span class="passport-label">HERITAGE PASSPORT</span>
+      <span class="passport-track"><span class="passport-fill" id="passportFill"></span></span>
+      <span class="passport-count" id="passportCount">0 / 7 sealed</span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-node">326 BC<br>Hydaspes</div>
+      <div class="timeline-node">Ancient<br>Tilla Jogian</div>
+      <div class="timeline-node">~1020 AD<br>Nandana</div>
+      <div class="timeline-node">1541 AD<br>Rohtas</div>
+      <div class="timeline-node">1872 AD<br>Khewra</div>
+      <div class="timeline-node">1878 AD<br>Victoria Bridge</div>
+      <div class="timeline-node">1967 AD<br>Mangla Dam</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="sites"></main>
+
+<footer class="wrap">
+  <p>A documentation of seven places in Jhelum district that shaped history — local, regional, and global — and are still standing. Historical notes are drawn from public sources; where a claim rests on tradition rather than documented record, that distinction is flagged in the text.</p>
+</footer>
+
+<button type="button" class="chronicler-fab" id="chroniclerFab" aria-label="Open The Chronicler" aria-expanded="false" aria-controls="chroniclerPanel">📜</button>
+<div class="chronicler-panel" id="chroniclerPanel" role="dialog" aria-labelledby="chroniclerTitle" hidden>
+  <div class="chronicler-header">
+    <h2 class="chronicler-title" id="chroniclerTitle">The Chronicler</h2>
+    <button type="button" class="chronicler-close" id="chroniclerClose" aria-label="Close The Chronicler">✕</button>
+  </div>
+  <div class="chronicler-log" id="chroniclerLog" role="log" aria-live="polite"></div>
+  <form class="chronicler-form" id="chroniclerForm">
+    <div class="chronicler-compose">
+      <input type="text" id="chroniclerInput" name="q" autocomplete="off" placeholder="Ask about a place…">
+      <button type="submit" class="btn chronicler-send">Send</button>
+    </div>
+    <div class="chronicler-chips" id="chroniclerChips"></div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
